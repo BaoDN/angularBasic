@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--Angular Front to Back with Web API
+    Getting Started: Angular & Web API : Anatomy of an Angular Application-->
+    <meta charset="utf-8" />
+    <title>Acme product Management</title>
+	<link href="Content/bootstrap.css" rel="stylesheet" />
+    <!--library script-->
+    <script src="Scripts/angular.js"></script>
+    <!--application script-->
+    <script src="app/app.js"></script>
+
+    <!--Product controller-->
+    <script src="app/products/productListCtrl.js"></script>
+</head>
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Acme Product Management</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div ng-include ="'app/products/productListView.html'"></div>
+    </div>
+</body>
+</html>
